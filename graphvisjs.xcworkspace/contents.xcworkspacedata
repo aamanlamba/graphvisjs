@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:app.js">
+   </FileRef>
+   <FileRef
+      location = "group:main.css">
+   </FileRef>
+   <FileRef
+      location = "group:TestVis.html">
+   </FileRef>
+   <FileRef
+      location = "group:ajax-loader.gif">
+   </FileRef>
+   <FileRef
+      location = "group:vis.min.js">
+   </FileRef>
+   <FileRef
+      location = "group:vis.min.css">
+   </FileRef>
+   <FileRef
+      location = "group:jquery-3.2.1.js">
+   </FileRef>
+</Workspace>

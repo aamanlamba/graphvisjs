@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>display graph from a Neo4J database with vis.js</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <p>
+        This page is a simple example that can be used to display the content of a Neo4j database using <a
+            href="http://visjs.org/">Vis.js</a> library.
+        To be used you need to provide the conection details of a running Neo4j database.
+        </p>
+        <label>
+            Protocol:<input id="protocolinput" type="text" value="http">
+        </label>
+        <label>
+            Host:<input id="hostinput" type="text" value="localhost">
+        </label>
+        <label>
+            Port:<input id="portinput" type="number" value="7474" min="0" max="65535">
+        </label>
+        <label>
+            User:<input id="userinput" type="text" value="neo4j">
+        </label>
+        <label>
+            password:<input id="passinput" type="password">
+        </label>
+        <label>
+            limit:<input id="limit" type="number" value="100">
+        </label>
+        <div>
+            <button onclick="displayGraph()">Display Graph</button>
+            <img id="loading" src="ajax-loader.gif">
+        </div>
+        
+        <div id="wrapper">
+            <div id="vis"></div>
+            <div id="loadingBar">
+                <div class="outerBorder">
+                    <div id="text">0%</div>
+                    <div id="border">
+                        <div id="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <script src="jquery-3.2.1.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="vis.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
+
